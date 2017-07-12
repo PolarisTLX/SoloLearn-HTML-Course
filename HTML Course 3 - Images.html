@@ -1,0 +1,59 @@
+<!-- The <img> Tag -->
+
+<html>
+   <head>
+      <title>first page</title>
+   </head>
+   <body>
+
+<!-- The <img> tag is used to insert an image. It contains only attributes, and does not have a closing tag.
+The image's URL (address) can be defined using the src attribute. -->
+
+<img src="image.jpg" />
+
+
+<!-- if you have a photo named "tree.jpg" in the same folder as the HTML file,
+your code should look like this: -->
+<img src="tree.jpg" alt="" />
+<!-- In case the image cannot be displayed, the alt attribute specifies an alternate text
+that describes the image in words.
+The alt attribute is required.  (for this? otherwise not required?) -->
+
+
+<!--
+Image Resizing
+
+To define the image size, use the width and height attributes.
+The value can be specified in pixels or as a percentage: -->
+
+<img src="tree.jpg" height="150px" width="150px" alt="" />
+      <!-- or -->
+<img src="tree.jpg" height="50%" width="50%" alt="" />
+
+<!-- NOTE: Loading images takes time. Using large images can slow down your page, so use them with care. -->
+
+<!-- By default, an image has no borders. The border attribute within the image tag can be used to create a border around the image. -->
+<img src="tree.jpg" height="150px" width="150px" border="1px" alt="" />
+
+
+<!--
+LINKS: The <a> Tag
+
+You can add links to text or images that the user can click on to be directed to another file or webpage.
+Links are defined using the <a> tag.
+
+Use the href attribute to define the link's destination address:
+
+<a href=""></a>
+
+Remember: Anchor Tag  + Hyperlink Reference  for   <a href=""></a>
+
+<a href="http://www.sololearn.com"> Learn Playing </a>
+-->
+
+<!--
+The target attribute specifies where to open the linked document.
+Giving a _blank value to your attribute will have the link open in a new window or new tab:
+<a href="http://www.sololearn.com" target="_blank">
+   Learn Playing
+</a> -->

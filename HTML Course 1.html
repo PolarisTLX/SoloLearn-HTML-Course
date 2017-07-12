@@ -1,0 +1,87 @@
+<!-- The head of an HTML file contains all of the non-visual elements that help make the page work. -->
+
+<!-- To place a title on the tab describing the web page, add a <title> element to your head section:
+The title element is important because it describes the page and is used by search engines. -->
+
+<!-- The <body> tag follows the head tag.
+All visual-structural elements are contained within the body tag.
+Headings, paragraphs, lists, quotes, images, and links are just a few of the elements that can be contained within the body tag. -->
+
+<html>
+   <head>
+     <title>Browser Tab Name of Page</title>
+   </head>
+   <body>
+     This is a line of text.
+
+     <p>This is regular text </p>
+     <p><b> bold text </b></p>
+     <hr/>
+     <p><big> big text </big></p>
+     <p><i> italic text </i></p>
+     <p><small> small text </small></p>
+     <p><strong> strong text </strong></p>
+     <p>regular text <sub> subscripted text </sub></p>
+     <p>regular text <sup> superscripted text </sup></p>
+     <p><ins> inserted text </ins></p>
+     <p><del> deleted/crossed out text </del></p>
+<br/>
+     <p> Some quote <br />
+     <i> - by some author</i>
+     </p>
+
+     <p class="quote">"This is a quote which is changed a bit in CSS"<p>
+
+    <!--
+    HTML Attributes: Attributes provide additional information about an element or a tag, while also modifying them.
+    Most attributes have a value; the value modifies the attribute.
+    Attributes are always specified in the start tag, and they appear in name="value" pairs.-->
+
+<p align="center">
+   This text is aligned to center with attribute &ltp align="center"&gt.
+</p>
+
+<!-- We can modify the horizontal line so it has a width of 50 pixels using the width attribute: -->
+<hr width="50px" />
+<!-- An element's width can also be defined using percentages: -->
+<hr width="50%" />
+<br/>
+<p align="center">Below is a horizontal line with attributes of width="10%" and align="left"<br />
+   <hr width="10%" align="left" /> This is also a text.
+</p>
+
+<p align="center">contradictory attributes within the same element.
+   <hr width="50%" align="left" />
+</p>
+
+
+   </body>
+</html>
+
+<!-- horizontal lines are created using <hr /> tags. -->
+
+<!--
+Browsers display <strong> as <b>, and <em> as <i>.
+However, the meanings of these tags differ:
+<b> and <i> define bold and italic text, respectively,
+while <strong> and <em> indicate that the text is "important". -->
+
+
+<!--
+HTML includes six levels of headings, which are ranked according to importance.
+These are <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.
+
+  <body>
+     <h1>This is heading 1</h1>
+     <h2>This is heading 2</h2>
+     <h3>This is heading 3</h3>
+
+It is not recommended that you use headings just to make the text big or bold,
+because search engines use headings to index the web page structure and content. -->
+
+<style>
+.quote {
+    font-size: 12pt;
+    text-align: right;
+    margin-top: 10px;
+</style>
