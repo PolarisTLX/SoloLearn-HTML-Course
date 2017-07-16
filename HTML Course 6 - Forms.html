@@ -1,0 +1,63 @@
+<!--
+The <form> Element
+
+HTML forms are used to collect information from the user.
+Forms are defined using the <form> element, with its opening and closing tags: -->
+<html>
+<body>
+   <form>This is a form element.
+     <input type="text" name="username" /><br />
+  <input type="password" name="password" />
+</form>
+</body>
+
+<!-- Use the action attribute to point to a webpage that will load after the user submits the form.
+NOTE: Needs a submit button for this action to take place!!!
+
+After the form is submitted, the data should be processed on the server using a programming language, such as PHP.
+-->
+<form action="http://www.sololearn.com"> This is a form element with an action attribute.
+  <input type="text" name="username" /><br />
+  <input type="password" name="password" />
+  <input type="submit"/>
+</form>
+
+<!-- Usually the form is submitted to a web page on a web server. -->
+
+<!-- The method attribute specifies the HTTP method (GET or POST) to be used when forms are submitted (see below for description):
+<form action="url" method="GET">
+
+<form action="url" method="POST">
+
+When you use GET, the form data will be visible in the page address.
+
+Use POST if the form is updating data, or includes sensitive information (passwords).
+POST offers better security because the submitted data is not visible in the page address. -->
+
+
+<!-- If we change the input type to radio, it allows the user select only one of a number of choices: -->
+<input type="radio" name="gender" value="male" /> Male <br />
+<input type="radio" name="gender" value="female" /> Female <br />
+
+<br /><br /><br />
+<!-- The type "checkbox" allows the user to select more than one option: -->
+<input type="checkbox" name="gender" value="1" /> Sandals <br />
+<input type="checkbox" name="gender" value="2" /> Sunglasses <br />
+<input type="checkbox" name="gender" value="2" /> Sunscreen <br />
+<input type="checkbox" name="gender" value="2" /> Hat <br />
+
+
+<!-- CONTACT ME FORM! -->
+<h1><span>Contact Me</span></h1>
+<form>
+  <input name="name" type="text" /><br/>
+  <input name="email" type="text" /><br/>
+  <textarea name="message"></textarea>
+  <input type="submit" value="SEND" class="submit" />
+</form>
+
+<!-- This is just a static HTML page, so it won't work to actually submit the form.
+You'd need to create the server-side code in order to submit a real form and process the data.
+To learn how, complete SoloLearn's PHP course -->
+
+</html>
