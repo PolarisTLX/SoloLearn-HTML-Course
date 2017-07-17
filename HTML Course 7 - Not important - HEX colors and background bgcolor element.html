@@ -1,0 +1,61 @@
+<!-- Background and Font Colors
+
+The bgcolor attribute can be used to change the web page's background color.
+
+This example would produce a dark blue background with a white headline: -->
+<html>
+   <head>
+      <title>first page</title>
+   </head>
+   <body bgcolor="#000099">
+       <h1>
+        <font color="#FFFFFF"> White headline </font>
+       </h1>
+   </body>
+</html>
+
+
+
+<!-- The <frame> Tag
+
+NOTE!!! The >frame> and <frameset> tags are NOT SUPPORTED in HTML5!!
+
+A page can be divided into frames using a special frame document.
+
+The <frame> tag defines one specific window (frame) within a <frameset>. Each <frame> in a <frameset> can have different attributes, such as border, scrolling, the ability to resize, etc.
+
+The <frameset> element specifies the number of columns or rows in the frameset, as well as what percentage or number of pixels of space each of them occupies.
+<frameset cols="100, 25%, *"></frameset>
+<frameset rows="100, 25%, *"></frameset>
+
+
+
+
+
+Working with Frames
+
+Use the <noresize> attribute to specify that a user cannot resize a <frame> element:
+<frame noresize="noresize">
+
+Frame content should be defined using the src attribute.
+
+Lastly, the <noframes> element provides a way for browsers that do not support frames to view the page. The element can contain an alternative page, complete with a body tag and any other elements.
+<frameset cols="25%,50%,25%">
+   <frame src="a.htm" />
+   <frame src="b.htm" />
+   <frame src="c.htm" />
+   <noframes>Frames not supported!</noframes>
+</frameset>
+
+The <frame> tag is not supported in HTML5.
+ -->
+
+
+
+<!-- Here we use a frame to embed a YouTube video. We'll also create a Follow Me section that includes links at the end of the page.
+Check out the final code: -->
+
+<div class="section">
+  <h1><span>My Media</span></h1>
+  <iframe height="150" width="300" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe>
+        </div>
