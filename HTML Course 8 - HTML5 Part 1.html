@@ -3,9 +3,137 @@ HTML5
 When writing HTML5 documents, one of the first new features that you'll notice is the doc type declaration:
 <!DOCTYPE HTML>
 
-The character encoding (charset) declaration is also simplified:
+<body>
+
+<!-- The character encoding (charset) declaration is also simplified:
 <meta charset="UTF-8">
 
 New Elements in HTML5
 <article>, <aside>, <audio>, <canvas>, <datalist>, <details>, <embed>, <footer>, <header>, <nav>, <output>, <progress>, <section>, <video>, and even more!
 The default character encoding in HTML5 is UTF-8.
+
+
+New in HTML5
+
+Forms
+- The Web Forms 2.0 specification allows for creation of more powerful forms and more compelling user experiences.
+- Date pickers, color pickers, and numeric stepper controls have been added.
+- Input field types now include email, search, and URL.
+- PUT and DELETE form methods are now supported.
+
+Integrated API (Application Programming Interfaces)
+- Drag and Drop
+- Audio and Video
+- Offline Web Applications
+- History
+- Local Storage
+- Geolocation
+- Web Messaging
+
+
+In HTML, elements typically belonged in either the block level or inline content model. HTML5 introduces seven main content models.
+
+- Metadata
+- Embedded
+- Interactive
+- Heading
+- Phrasing
+- Flow
+- Sectioning
+The HTML5 content models are designed to make the markup structure more meaningful for both the browser and the web designer.
+
+
+Content Models
+
+Metadata: Content that sets up the presentation or behavior of the rest of the content. These elements are found in the head of the document.
+Elements: <base>, <link>, <meta>, <noscript>, <script>, <style>, <title>
+
+Embedded: Content that imports other resources into the document.
+Elements: <audio>, <video>, <canvas>, <iframe>, <img>, <math>, <object>, <svg>
+
+Interactive: Content specifically intended for user interaction.
+Elements: <a>, <audio>, <video>, <button>, <details>, <embed>, <iframe>, <img>, <input>, <label>, <object>, <select>, <textarea>
+
+Heading: Defines a section header.
+Elements: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <hgroup>
+
+Phrasing: This model has a number of inline level elements in common with HTML4.
+Elements: <img>, <span>, <strong>, <label>, <br />, <small>, <sub>, and more.
+
+The same element can belong to more than one content model. -->
+
+<a href="https://api.sololearn.com/DownloadFile?id=2546">The various content models overlap in certain areas, depending on how they are being used.</a>
+<br/>
+<a href="https://api.sololearn.com/DownloadFile?id=2471">A generic HTML5 page structure looks like this:</a>
+
+
+<!-- Note that the <header> is completely different from the <head> tag. -->
+
+<!--
+The <article> Element -->
+
+<!-- Article is a self-contained, independent piece of content that can be used and distributed separately from the rest of the page or site.
+This could be a forum post, a magazine or newspaper article, a blog entry, a comment, an interactive widget or gadget, or any other independent piece of content.  -->
+
+<!-- The <article> element replaces the <div> element that was widely used in HTML4, along with an id or class. -->
+<article>
+   <h1>The article title</h1>
+   <p>Contents of the article element </p>
+</article>
+
+<!--
+The <section> Element
+
+<section> is a logical container of the page or article.
+Sections can be used to divide up content within an article.
+For example, a homepage could have a section for introducing the company, another for news items, and still another for contact information.
+
+Each <section> should be identified, typically by including a heading (h1-h6 element) as a child of the <section> element. -->
+<article>
+   <h1>Welcome</h1>
+   <section>
+      <h1>Heading</h1>
+      <p>content or image</p>
+   </section>
+</article>
+
+
+<!-- If it makes sense to separately syndicate the content of a <section> element, use an <article> element instead. -->
+
+<!--
+The <aside> Element
+
+<aside> is secondary or tangential content which could be considered separate from but indirectly related to the main content.
+This type of content is often represented in sidebars.
+When an <aside> tag is used within an <article> tag, the content of the <aside> should be specifically related to that article. -->
+<article>
+   <h1> Gifts for everyone </h1>
+   <p> This website will be the best place for choosing gifts </p>
+   <aside>
+      <p> Gifts will be delivered to you within 24 hours </p>
+   </aside>
+</article>
+
+
+
+<!--
+<audio> in HTML5
+
+There are two different ways to specify the audio source file's URL. The first uses the source attribute: -->
+<audio src="European_Dragon_Roaring_and_breathe_fire-daniel-simon.mp3" controls>
+   Audio element not supported by your browser
+</audio>
+<!-- The text between the <audio> and </audio> tags will display in browsers that do not support the <audio> element. -->
+
+
+<!-- The second way uses the <source> element inside the <audio> element: -->
+<audio controls>
+   <source src="audio.mp3" type="audio/mpeg">
+   <source src="audio.ogg" type="audio/ogg">
+</audio>
+
+<!-- Multiple <source> elements can be linked to different audio files. The browser will use the first recognized format. -->
+
+
+
+</body>

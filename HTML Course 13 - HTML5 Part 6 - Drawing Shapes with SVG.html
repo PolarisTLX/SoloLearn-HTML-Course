@@ -1,0 +1,121 @@
+<!--
+Drawing a Circle
+
+To draw shapes with SVG (scalable vector graphics),
+you first need to create an SVG element tag with two attributes: width and height.
+
+<svg width="1000" height="1000"></svg>
+
+To create a circle, add a <circle> tag: -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+  <svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+  <svg width="200" height="200">
+   <circle cx="80" cy="80" r="50" fill="green" />
+</svg>
+
+  <svg width="200" height="200">
+   <rect cx="80" cy="80" r="50" fill="blue" />
+</svg>
+<svg width="300" height="300">
+    <line x1="10" y1="10" x2="200" y2="100"
+        style="stroke:red; stroke-linecap:round;
+        stroke-width:20"  />
+</svg>
+
+<!-- The <ellipse> is similar to the <circle>, with one exception:
+You can independently change the horizontal and vertical axes using rx and ry attributes. -->
+<svg height="300" width="300">
+   <ellipse cx="200" cy="100" rx="150" ry="70" style="fill:green" />
+</svg>
+
+
+<!-- The <polygon> element is used to create a graphic with at least three sides.
+The polygon element is unique because it automatically closes off the shape for you. -->
+<svg width="300" height="300">
+<polygon points="100 100, 200 200, 300 0"
+      style="fill: green; stroke:black;" />
+</svg>
+
+
+<!-- <polyline> defines shapes built from multiple line definitions: -->
+<svg width="200" height="200">
+    <polyline style="stroke-linejoin:miter; stroke:black;
+        stroke-width:12; fill: none;"
+        points="100 100, 150 150, 200 100" />
+</svg>
+
+
+<!-- THERE IS A WEIRD GAP HERE -->
+
+  <!-- SVG Rounded Rectangle
+Example -->
+  <svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+</svg>
+
+  <!-- SVG Star
+Example -->
+  <svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+
+  <!-- SVG Logo
+Example -->
+  <svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</body>
+</html>
+
+
+<!--
+- cx pushes the center of the circle further to the right of the screen
+- cy pushes the center of the circle further down from the top of the screen
+- r defines the radius
+- fill determines the color of our circle
+- stroke adds an outline to the circle -->
+
+
+<!-- 
+Canvas vs. SVG
+
+Canvas
+- Elements are drawn programmatically
+- Drawing is done with pixels
+- Animations are not built in
+- High performance for pixels-based drawing operations
+- Resolution dependent
+- No support for event handlers
+- You can save the resulting image as .png or .jpg
+- Well suited for graphic-intensive games
+
+SVG
+- Elements are part of the page's DOM (Document object model)
+- Drawing is done with vectors
+- Effects, such as animations are built in
+- Based on standard XML syntax, which provides better accessibility
+- Resolution independent
+- Support for event handlers
+- Not suited for game applications
+- Best suited for applications with large rendering areas (for example, Google Maps)
+
+You can actually use both SVG and canvas on the same page, if needed.
+However, you cannot just draw SVG onto a canvas, or vice-versa. -->
